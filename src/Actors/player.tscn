@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://2um1qb3ee505"]
+
+[ext_resource type="Texture2D" uid="uid://k65ul25h1hkc" path="res://assets/slime.png" id="1_dpyur"]
+[ext_resource type="Script" path="res://src/Actors/Player.cs" id="1_rp2aw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hgwhc"]
+size = Vector2(91, 96)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_rp2aw")
+
+[node name="Slime" type="Sprite2D" parent="."]
+position = Vector2(0, -50)
+texture = ExtResource("1_dpyur")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -48)
+shape = SubResource("RectangleShape2D_hgwhc")
