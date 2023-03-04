@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://db0q6igll2koc"]
+
+[ext_resource type="Script" path="res://src/LayerArena2D/ChangeLayerGround.cs" id="1_q3j2u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eva1n"]
+
+[node name="ChangeLayerGround" type="Area2D"]
+script = ExtResource("1_q3j2u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_eva1n")
+
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
