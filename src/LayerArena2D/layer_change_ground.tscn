@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://7po5vn5ia6v5"]
+
+[ext_resource type="Script" path="res://src/LayerArena2D/layer_change_ground.cs" id="1_4vwep"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ssb38"]
+size = Vector2(191.565, 79.9454)
+
+[node name="LayerChangeGround" type="Area2D"]
+rotation = -1.5708
+scale = Vector2(0.15, 0.05)
+skew = 1.00136e-05
+priority = 5.0
+script = ExtResource("1_4vwep")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(21, 3)
+shape = SubResource("RectangleShape2D_ssb38")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

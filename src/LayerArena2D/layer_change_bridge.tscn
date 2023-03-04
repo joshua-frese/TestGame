@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://brji0p6qw4efp"]
+
+[ext_resource type="Script" path="res://src/LayerArena2D/layer_change_bridge.cs" id="1_l8yxp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u0lqo"]
+size = Vector2(68.8773, 43.9727)
+
+[node name="LayerChangeBridge" type="Area2D"]
+position = Vector2(4.54747e-13, 5.96046e-08)
+rotation = 1.57079
+priority = 5.0
+script = ExtResource("1_l8yxp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-35, -7.62939e-05)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_u0lqo")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

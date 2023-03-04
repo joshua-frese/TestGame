@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://k65ul25h1hkc"
-path="res://.godot/imported/slime.png-44567d1ba3ebdbac1e5a191593b0b118.ctex"
+uid="uid://dm0siq0inrwn5"
+path="res://.godot/imported/Wood Bridge.png-c16051b5f48f24f0bc4d5f96442fe723.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/slime.png"
-dest_files=["res://.godot/imported/slime.png-44567d1ba3ebdbac1e5a191593b0b118.ctex"]
+source_file="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Wood Bridge.png"
+dest_files=["res://.godot/imported/Wood Bridge.png-c16051b5f48f24f0bc4d5f96442fe723.ctex"]
 
 [params]
 
